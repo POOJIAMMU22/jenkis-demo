@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/POOJIAMMU22/jenkis-demo.git'
+                git branch: 'main', url: 'https://github.com/POOJIAMMU22/jenkis-demo.git'
             }
         }
         stage('Build Docker Image') {
